@@ -5,6 +5,131 @@ nav {
     align-items: center;
 }
 
-body{
+body {
     margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: rgb(239, 240, 173);
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* ให้ h2, h3 ซ้อนกันแนวตั้ง */
+    justify-content: center;
+    line-height: 5px;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(173, 214, 240);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column; /* ให้ h2, h3 ซ้อนกันแนวตั้ง */
+    justify-content: center;
+    line-height: 10px;
+}
+
+.Balance {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(240, 173, 225);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 10px;
+}
+.account-info {
+    display: flex;               /* แนวนอน */
+    flex-direction: row;         /* เรียง h4 กับ textarea ในแถวเดียว */
+    align-items: center;         /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    gap: 10px;
+}
+
+textarea {
+    resize: none;
+    font-size: 14px;
+}
+
+.Bank {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(211, 173, 240);
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 10px;
+}
+
+.but-bank {
+    margin: 5px 0;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(173, 240, 185);
+}
+.row3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 10px;
+}
+
+.inout {
+    margin: 5px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.history {
+    background-color: rgb(239, 240, 173);
+}
+
+/* From Uiverse.io by aasisodiya */ 
+button {
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  width: 7em;
+  border-radius: 0.5rem;
+  color: lightcoral;
+  box-shadow: 0 0.3rem #dfd9d9;
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+  box-shadow: 0 0.15rem #dfd9d9;
+  transform: translateY(0.15rem);
+}
+
+button:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.05rem #bcb4b4;
+}
+
+button:disabled {
+  cursor: auto;
+  color: grey;
 }
