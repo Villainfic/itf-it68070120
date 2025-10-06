@@ -6,18 +6,15 @@ body {
 }
 
 nav {
-    background: linear-gradient(90deg, #ffb6b9, #fae3d9);
+    background-color: #ffb6b9;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 40px;
-    box-shadow: 0 3px 8px rgba(255, 182, 185, 0.4);
-    border-bottom: 4px solid #ffd5e5;
 }
 
 nav h2 {
-    color: #ff5c8d;
-    text-shadow: 1px 1px 2px #ffe3ec;
+    color: #fff;
 }
 
 .container {
@@ -26,17 +23,16 @@ nav h2 {
     gap: 15px;
     padding: 20px;
     background-color: #fff0f5;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 80%;
     margin: 20px auto;
-    box-shadow: 0 3px 10px rgba(255, 182, 193, 0.3);
 }
 
 .text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 8px;
+    line-height: 1.5;
 }
 
 .text-content h2 {
@@ -54,14 +50,13 @@ nav h2 {
 textarea {
     resize: none;
     font-size: 14px;
-    border-radius: 12px;
-    border: 2px solid #ffd6e0;
+    border-radius: 5px;
+    border: 1px solid #ffd6e0;
     padding: 10px;
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(255, 192, 203, 0.3);
 }
 
-/* ─── Section Boxes ─── */
+/* Section Boxes */
 .information, .Balance, .Bank, .tool {
     display: flex;
     align-items: center;
@@ -69,8 +64,7 @@ textarea {
     margin: 20px auto;
     padding: 20px;
     width: 80%;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(255, 182, 185, 0.3);
+    border-radius: 10px;
 }
 
 .information { background-color: #d3f8e2; }
@@ -96,36 +90,24 @@ h2, h3 {
 
 button {
     background-color: #ffd6e0;
-    border: none;
+    border: 1px solid #ffb6b9;
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
-    border-radius: 1rem;
+    border-radius: 5px;
     color: #ff5c8d;
     font-weight: bold;
-    box-shadow: 0 3px 0 #ffb6b9;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: #ffb6c1;
     color: white;
-    transform: translateY(-2px);
-}
-
-button:active {
-    box-shadow: 0 1px 0 #ffb6b9;
-    transform: translateY(1px);
 }
 
 input, select {
-    border-radius: 10px;
-    border: 2px solid #ffd6e0;
+    border-radius: 5px;
+    border: 1px solid #ffd6e0;
     padding: 5px 10px;
     outline: none;
-    background-color: #fff;
-}
-
-select {
     background-color: #fff;
 }
