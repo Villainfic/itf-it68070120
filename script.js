@@ -25,15 +25,25 @@ function proceed() {
     count++;
     let DepoW = DepoWith.value;
     let DepoN = Number(DepoNum.value);
-
+    let log =""
     if (DepoW === "deposit") {
-        totalacc += DepoN;
-        totalcash -= DepoN;
-    } else {
-        totalacc -= DepoN;
-        totalcash += DepoN;
+        if (totalcash >= DepoN) {
+            totalacc += DepoN;
+            totalcash -= DepoN;
+            log = `${count} | Current account balance: ${totalacc} | Current cash balance: ${totalcash}\n`;
+        } else {
+            log = `${count} | Couldn't deposit entered balance. (Insufficient cash balance)\n`;
+        }
+    }
+    else if (DepoW === "withdraw") {
+        if (totalacc >= DepoN) {
+            totalacc -= DepoN;
+            totalcash += DepoN;
+            log = `${count} | Current account balance: ${totalacc} | Current cash balance: ${totalcash}\n`;
+        } else {
+            log = `${count} | Couldn't withdraw entered balance. (Insufficient account balance)\n`;
+        }
     }
 
-    let log = `${count} | Current account balance: ${totalacc} | Current cash balance: ${totalcash}\n`;
     historyBox.textContent += log;
-}
+    }
