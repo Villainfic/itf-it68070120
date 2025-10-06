@@ -1,138 +1,131 @@
+body {
+    margin: 0;
+    font-family: "Comic Relief", sans-serif;
+    background-color: #fff9f9;
+    color: #444;
+}
+
 nav {
-    background-color: darkorange;
+    background: linear-gradient(90deg, #ffb6b9, #fae3d9);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 40px;
+    box-shadow: 0 3px 8px rgba(255, 182, 185, 0.4);
+    border-bottom: 4px solid #ffd5e5;
 }
 
-body {
-    margin: 0;
+nav h2 {
+    color: #ff5c8d;
+    text-shadow: 1px 1px 2px #ffe3ec;
 }
 
 .container {
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 10px;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 3px 10px rgba(255, 182, 193, 0.3);
 }
 
 .text-content {
     display: flex;
-    flex-direction: column; /* ให้ h2, h3 ซ้อนกันแนวตั้ง */
+    flex-direction: column;
     justify-content: center;
-    line-height: 5px;
+    line-height: 8px;
 }
 
-.information {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: rgb(173, 214, 240);
-}
-
-.info-content {
-    display: flex;
-    flex-direction: column; /* ให้ h2, h3 ซ้อนกันแนวตั้ง */
-    justify-content: center;
-    line-height: 10px;
-}
-
-.Balance {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(240, 173, 225);
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    line-height: 10px;
-}
-.account-info {
-    display: flex;               /* แนวนอน */
-    flex-direction: row;         /* เรียง h4 กับ textarea ในแถวเดียว */
-    align-items: center;         /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    gap: 10px;
-}
-
-textarea {
-    resize: none;
-    font-size: 14px;
-}
-
-.Bank {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(211, 173, 240);
-}
-
-.row2 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    line-height: 10px;
-}
-
-.but-bank {
-    margin: 5px 0;
-}
-
-.tool {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: rgb(173, 240, 185);
-}
-.row3 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    line-height: 10px;
-}
-
-.inout {
-    margin: 5px 0;
-    display: flex;
-    gap: 10px;
+.text-content h2 {
+    color: #ff69b4;
 }
 
 .history {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(239, 240, 173);
+    background-color: #fffaf0;
     padding: 20px;
 }
 
-/* From Uiverse.io by aasisodiya */ 
+textarea {
+    resize: none;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 2px solid #ffd6e0;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(255, 192, 203, 0.3);
+}
+
+/* ─── Section Boxes ─── */
+.information, .Balance, .Bank, .tool {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 182, 185, 0.3);
+}
+
+.information { background-color: #d3f8e2; }
+.Balance { background-color: #e4c1f9; }
+.Bank { background-color: #fce1e4; }
+.tool { background-color: #f9f9c5; }
+
+h2, h3 {
+    color: #ff80ab;
+}
+
+.row, .row2, .row3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.account-info, .but-bank, .inout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 button {
-  background-color: #eee;
-  border: none;
-  padding: 0.5rem 0.8rem;
-  font-size: 0.8rem;
-  width: 7em;
-  border-radius: 0.5rem;
-  color: lightcoral;
-  box-shadow: 0 0.3rem #dfd9d9;
-  cursor: pointer;
+    background-color: #ffd6e0;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    color: #ff5c8d;
+    font-weight: bold;
+    box-shadow: 0 3px 0 #ffb6b9;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffb6c1;
+    color: white;
+    transform: translateY(-2px);
 }
 
 button:active {
-  color: white;
-  box-shadow: 0 0.15rem #dfd9d9;
-  transform: translateY(0.15rem);
+    box-shadow: 0 1px 0 #ffb6b9;
+    transform: translateY(1px);
 }
 
-button:hover:not(:disabled) {
-  background: lightcoral;
-  color: white;
-  text-shadow: 0 0.05rem #bcb4b4;
+input, select {
+    border-radius: 10px;
+    border: 2px solid #ffd6e0;
+    padding: 5px 10px;
+    outline: none;
+    background-color: #fff;
 }
 
-button:disabled {
-  cursor: auto;
-  color: grey;
+select {
+    background-color: #fff;
 }
